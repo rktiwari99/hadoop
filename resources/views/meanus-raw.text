@@ -1,0 +1,78 @@
+ <li class="nav-item{{Request::is('/') ? ' active' : ''}}"><a class="nav-link" href=" {{ url('/') }} ">Home @if(Request::is('/'))  @endif</a></li>
+<li class="nav-item{{Request::is('about-us') ? ' active' : ''}}"><a href=" {{ url('about-us') }} ">About @if(Request::is('about-us')) @endif</a></li>
+<li class="nav-item{{Request::is('pricing')) ? 'active' : '' }}"><a href=" {{ url('pricing') }} ">Pricing @if(Request::is('pricing')) @endif</a></li>
+<li class="nav-item{{Request::is('services')) ? 'active' : '' }}"><a href=" {{ url('services') }} ">Services @if(Request::is('services')) @endif</a>
+    <ul>
+        <li class="nav-item{{Request::is('development')) ? 'active' : '' }}"><a href=" {{ url('development') }} ">Web Development @if(Request::is('services')) @endif</a></li>
+    </ul>
+</li>
+<li class="nav-item{{Request::is('blogging')) ? 'active' : '' }}"><a href=" {{ url('blogging') }} ">Blog @if(Request::is('services')) @endif</a>
+    <!-- <ul>
+        <li class="{{ (request()->is('blog-info')) ? 'active' : '' }}"><a href=" {{ url('blog-info') }} ">Blog Details</a></li>
+    </ul> 
+</li>
+<li class="nav-item{{Request::is('contact-us')) ? 'active' : '' }}"><a href=" {{ url('contact-us') }} ">Contact @if(Request::is('services')) @endif</a></li>
+
+
+
+
+
+
+
+<!--  Portfolio  -->
+<!-- <section class="projects-area">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Works</h2>
+                <p>We have people of multiple kind in the house. Together we can provide high quality work to satisfy
+                    you.</p>
+            </div>
+            <br/><br/>
+
+            <div class="row">
+                <div class="col-lg-4 col-6  design bug">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-01.jpg">
+                            <img src="assets/images/projects/work-01.jpg" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  marketing custom">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-06.png">
+                            <img src="assets/images/projects/work-06.png" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  design custom">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-04.jpg">
+                            <img src="assets/images/projects/work-04.jpg" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  design bug">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-02.jpg">
+                            <img src="assets/images/projects/work-02.jpg" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  marketing custom">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-05.jpg">
+                            <img src="assets/images/projects/work-05.jpg" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  marketing bug custom">
+                    <div class="portfolio-project-box">
+                        <div class="portfolio-project-thumbnail image-popup-vertical-fit" href="images/projects/work-03.png">
+                            <img src="assets/images/projects/work-03.png" alt="Habu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"><a href="portfolio.html" class="wow animate__animated animate__flipInX large-blue-button">Load More</a></div>
+        </div>
+    </section> -->
