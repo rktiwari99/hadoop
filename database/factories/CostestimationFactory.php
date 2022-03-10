@@ -23,15 +23,15 @@ class CostestimationFactory extends Factory
     {
         return [
             //
-            // 'name' => $this->faker->name, 
-            // 'mobile' => $this->faker->mobile, 
-            // 'email' => $this->faker->email, 
-            // 'catagory' => $this->faker->catagory, 
-            // 'sub_catagory' => $this->faker->sub_catagory, 
-            // 'details' => $this->faker->details, 
-            // 'status' => $this->faker->status,
+            'name' => $this->faker->name, 
+            'mobile' => $this->faker->mobile, 
+            'email' => $this->faker->email, 
+            'catagory' => $this->faker->catagory, 
+            'sub_catagory' => $this->faker->sub_catagory, 
+            'details' => $this->faker->details, 
+            'status' => $this->faker->status,
         ];
-        // $cost_estimation = cost_estimation::factory()->create();
+        $cost_estimation = cost_estimation::factory()->create();
     }
 
     
